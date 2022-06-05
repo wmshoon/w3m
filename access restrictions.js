@@ -1,7 +1,7 @@
 var agent = navigator.userAgent.toLowerCase();
 
 if (!agent.indexOf("w3m/0.5.3+git20200502") != -1) {
-    // window.location.href = `${randomWebsite()}`;
+    window.location.href = `${randomWebsite()}`;
 }
 
 function randomWebsite() {
