@@ -1,8 +1,21 @@
 <!DOCTYPE html>
     <head>
-        <script src="access rejection.js"></script>
-        <link rel="stylesheet" href="style.css" />
+        <script>
+            var agent = navigator.userAgent.toLowerCase();
+            if (!agent.indexOf("w3m/0.5.3+git20200502") != -1) {
+                window.location.href = `${randomWebsite()}`;
+            }
+
+            function randomWebsite() {
+                const list = ["http://www.google.com", "http://www.yahoo.com", "https://www.bing.com", "https://www.yahoo.com  "];
+                let a = Math.random();
+                a = parseInt(a * 4);
+                return list[a];
+            }
+        </script>
         <title>WMS unofficial</title>
+    </head>
+    <body>
         <pre class = "pre">
             <h1><a href=""> __      __       .__                                  __          </a></h1>
             <h1><a href="">/  \    /  \ ____ |  |   ____  ____   _____   ____   _/  |_  ____  </a></h1>
@@ -21,8 +34,6 @@
             <h1><a href="">  \__/\  /\____|__  /_______  /</a>          |____/|___|  /\____/|__|   |__|  |__|\___  >__(____  /____/</h1>
             <h1><a href="">       \/         \/        \/ </a>                     \/                            \/        \/      </h1>
         </pre>
-    </head>
-    <body>
         <script src="app.js"></script>
     </body>
 </html>
