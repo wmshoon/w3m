@@ -14,6 +14,7 @@ function kickToRandomSite() {
         "https://duckduckgo.com/",
     ];
     let a = Math.random();
-    a = parseInt(a * list.lenth);
+    let lenth = list.length;
+    a = parseInt(a * lenth);
     return list[a];
 }
