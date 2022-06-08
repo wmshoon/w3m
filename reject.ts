@@ -1,4 +1,4 @@
-var agent = navigator.userAgent.toLowerCase();
+var agent: string = navigator.userAgent.toLowerCase();
 if (!agent.indexOf("w3m/0.5.3+git20200502") != -1) {
     window.location.href = `${kickToRandomSite()}`;
 }
@@ -12,5 +12,9 @@ function kickToRandomSite() {
         "https://www.naver.com",
         "https://duckduckgo.com/",
     ];
-    return list[parseInt(Math.random() * list.length)];
+    const a: number = parseInt(Math.random().toFixed());
+    const b: number = list.length;
+    const target: number = a * b;
+
+    return list[target];
 }
