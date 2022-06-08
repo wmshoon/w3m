@@ -4,8 +4,8 @@ if (!agent.indexOf("w3m/0.5.3+git20200502") != -1) {
 }
 function kickToRandomSite() {
     const list = [
-        "http://www.google.com",
-        "http://www.yahoo.com",
+        "https://www.google.com",
+        "https://www.yahoo.com",
         "https://www.bing.com",
         "https://www.yahoo.com",
         "https://www.daum.net",
